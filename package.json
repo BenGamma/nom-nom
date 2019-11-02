@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Ben Naylor (nayben@gmail.com)",
   "bugs": {
-    "url": "https://github.com/nzchicken/nom-nom/issues"
+    "url": "https://github.com/bengamma/nom-nom/issues"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.2.0",
@@ -61,7 +61,7 @@
     "prettier": "^1.17.0",
     "yargs-parser": "^13.0.0"
   },
-  "homepage": "https://nom-nom.nl/",
+  "homepage": "https://bengamma.github.io/nom-nom",
   "keywords": [
     "gatsby",
     "contentful",
@@ -71,13 +71,13 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nzchicken/nom-nom.git"
+    "url": "git+https://github.com/bengamma/nom-nom.git"
   },
   "scripts": {
     "dev": "NODE_ENV=development gatsby develop",
     "develop": "NODE_ENV=development gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "format": "prettier --config .prettierrc --write 'src/**/*.tsx'",
     "deploy": "gh-pages -d public -m \"[ci skip]\"",
     "start": "npm run develop",
