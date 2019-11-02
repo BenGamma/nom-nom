@@ -1,13 +1,13 @@
-require('ts-node').register();
+require('ts-node').register()
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 })
 const locales = require('./src/data/languages')
 
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  host: process.env.CONTENTFUL_HOST
+  host: process.env.CONTENTFUL_HOST,
 }
 
 const { spaceId, accessToken } = contentfulConfig
@@ -38,15 +38,15 @@ module.exports = {
         icon: 'static/icon.png',
         localize: [
           {
-            start_url: '/en-NZ/',
-            lang: 'en'
+            start_url: '/en-US/',
+            lang: 'en',
           },
           {
             start_url: '/nl-NL/',
-            lang: 'nl'
-          }
-        ]
-      }
+            lang: 'nl',
+          },
+        ],
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-transformer-remark',
@@ -62,8 +62,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography'
-      }
+        pathToConfigModule: 'src/utils/typography',
+      },
     },
     'gatsby-plugin-tslint',
   ],
