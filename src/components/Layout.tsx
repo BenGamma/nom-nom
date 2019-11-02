@@ -17,6 +17,20 @@ const Container = styled.div`
   ${mb({ mobile: 0, tablet: 4, desktop: 5 })}
 `
 
+const PageTitle = styled.h1``
+
+const TitleContainer = styled.div`
+  display: flex;
+  margin-left: 1em;
+`
+
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+  margin-top: 2rem;
+  margin-left: 1em;
+`
+
 const Navigation = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -69,6 +83,10 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <TitleContainer>
+          <Logo src="/flag_color.svg" />
+          <PageTitle>V4 Cookbook</PageTitle>
+        </TitleContainer>
         <Navigation>
           <NavigationItem>
             <NavigationLink to={`/${locale}/`}>

@@ -30,11 +30,11 @@ const HeroImage = styled(props => (
 `
 
 const Title = styled.h1`
-  background-color: #303080;
+  background-color: #bed6e2;
   width: 100%;
   text-align: left;
   font-size: 1.5rem;
-  color: white;
+  color: black;
   margin: 0;
   padding: 3px 13px;
 `

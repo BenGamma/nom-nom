@@ -2,14 +2,16 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   min-height: 100vh;
-  background: #005AA7;
-  background: linear-gradient(to bottom, #FFFDE4, #005AA7);
+  background: #bed6e2;
+  /* background: linear-gradient(to bottom, #FFFDE4, #005AA7); */
 }
 
 a {
