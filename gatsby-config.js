@@ -20,7 +20,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Nom-nom. Om nom nom nom',
+    title: 'Feed the army. Om nom nom nom',
     languages: locales.languages,
     defaultLocale: locales.defaultLocale,
   },

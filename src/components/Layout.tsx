@@ -5,7 +5,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { mb } from 'styled-components-spacing'
 import { Dish, Home } from 'styled-icons/boxicons-regular'
 import { getMessage } from '../data/languages'
-import logo from '../../static/pp-logo.png'
+import logo from '../../static/onearmylogo.jpg'
 
 import './base.css'
 
