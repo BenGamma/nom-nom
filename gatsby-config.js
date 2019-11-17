@@ -41,10 +41,6 @@ module.exports = {
             start_url: '/en-US/',
             lang: 'en',
           },
-          {
-            start_url: '/nl-NL/',
-            lang: 'nl',
-          },
         ],
       },
     },

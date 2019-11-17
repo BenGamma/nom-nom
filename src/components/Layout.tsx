@@ -5,7 +5,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import { mb } from 'styled-components-spacing'
 import { Dish, Home } from 'styled-icons/boxicons-regular'
 import { getMessage } from '../data/languages'
-import LanguageSelector from './LanguageSelector'
 import logo from '../../static/pp-logo.png'
 
 import './base.css'
@@ -103,9 +102,6 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
             </NavigationLink>
           </NavigationItem>
           <NavigationSpacer />
-          {/* <NavigationItem>
-            <LanguageSelector currentLocale={locale} currentUrl={url} />
-          </NavigationItem> */}
         </Navigation>
         <Container>{children}</Container>
       </>
