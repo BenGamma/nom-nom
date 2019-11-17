@@ -55,7 +55,6 @@ export const pageQuery = graphql`
     }
     allContentfulMeal(
       filter: { node_locale: { eq: $locale }, title: { ne: null } }
-      sort: { fields: publishDate, order: DESC }
     ) {
       edges {
         node {
