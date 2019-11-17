@@ -6,6 +6,7 @@ import { mb } from 'styled-components-spacing'
 import { Dish, Home } from 'styled-icons/boxicons-regular'
 import { getMessage } from '../data/languages'
 import LanguageSelector from './LanguageSelector'
+import logo from '../../static/pp-logo.png'
 
 import './base.css'
 
@@ -85,7 +86,7 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
     <ThemeProvider theme={theme}>
       <>
         <TitleContainer>
-          <Logo src={'/pp-logo.png'} alt="precious plastic logo" />
+          <Logo src={logo} alt="precious plastic logo" />
           <PageTitle>V4 Cookbook</PageTitle>
         </TitleContainer>
         <Navigation>
@@ -102,9 +103,9 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
             </NavigationLink>
           </NavigationItem>
           <NavigationSpacer />
-          <NavigationItem>
+          {/* <NavigationItem>
             <LanguageSelector currentLocale={locale} currentUrl={url} />
-          </NavigationItem>
+          </NavigationItem> */}
         </Navigation>
         <Container>{children}</Container>
       </>
