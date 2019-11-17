@@ -77,3 +77,35 @@ export const pageQuery = graphql`
     }
   }
 `
+// TODO check why error on sort query
+// export const pageQuery = graphql`
+//   query IndexByLanguage($locale: String!) {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     allContentfulMeal(
+//       filter: { node_locale: { eq: $locale }, title: { ne: null } }
+//       sort: { fields: publishDate, order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           title
+//           slug
+//           shortDescription {
+//             childMarkdownRemark {
+//               html
+//             }
+//           }
+//           updatedAt
+//           heroImage {
+//             fixed(width: 280) {
+//               ...GatsbyContentfulFixed
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
