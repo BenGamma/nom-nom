@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 import { mb } from 'styled-components-spacing'
 import { Dish, Home } from 'styled-icons/boxicons-regular'
-
 import { getMessage } from '../data/languages'
 import LanguageSelector from './LanguageSelector'
 
@@ -17,7 +16,9 @@ const Container = styled.div`
   ${mb({ mobile: 0, tablet: 4, desktop: 5 })}
 `
 
-const PageTitle = styled.h1``
+const PageTitle = styled.h1`
+  margin-left: 15px;
+`
 
 const TitleContainer = styled.div`
   display: flex;
@@ -84,7 +85,7 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
     <ThemeProvider theme={theme}>
       <>
         <TitleContainer>
-          <Logo src="/flag_color.svg" />
+          <Logo src={'/pp-logo.png'} alt="precious plastic logo" />
           <PageTitle>V4 Cookbook</PageTitle>
         </TitleContainer>
         <Navigation>
