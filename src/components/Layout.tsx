@@ -86,7 +86,7 @@ const Layout: React.FC<IProps> = ({ pageContext, children }) => {
       <>
         <TitleContainer>
           <Logo src={logo} alt="precious plastic logo" />
-          <PageTitle>V4 Cookbook</PageTitle>
+          <PageTitle>ONEARMY Cookbook</PageTitle>
         </TitleContainer>
         <Navigation>
           <NavigationItem>

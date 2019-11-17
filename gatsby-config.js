@@ -24,7 +24,7 @@ module.exports = {
     languages: locales.languages,
     defaultLocale: locales.defaultLocale,
   },
-  pathPrefix: '/nom-nom',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
