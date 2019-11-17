@@ -8,22 +8,10 @@
   ],
   "rules": {
     "prettier": true,
-    "semicolon": [
-      true,
-      "never"
-    ],
+    "semicolon": [true, "never"],
     "no-var-requires": true,
-    "no-submodule-imports": [
-      true,
-      "date-fns",
-      "styled-icons"
-    ],
-    "quotemark": [
-      true,
-      "single",
-      "jsx-double",
-      "backtick",
-      "avoid-temaplte"
-    ]
+    "no-submodule-imports": [true, "date-fns", "styled-icons"],
+    "quotemark": [true, "single", "jsx-double", "backtick", "avoid-temaplte"],
+    "ordered-imports": false
   }
 }
